@@ -1,0 +1,83 @@
+---
+title: "[GSoC'21] API Generator and tools with Draft 7 schema | Freifunk"
+layout: post
+date: 2021-08-21
+image: /assets/images/GSoC.png
+headerImage: true
+tag:
+- opensource
+- react
+- typescript
+- jsonschema
+- gsoc
+category: blog
+author: sh15h4nk
+description: Google summer of code 21, Freifunk
+---
+
+## Before we begin
+
+Hey everyone, I'm happy that my proposal has been accepted for GSoC'21 @freifunk. It's a bit sad that time flew very quick, in the past 10 week I worked on a project, which is intended to update the spec schema file from draft 3 version to latest jsonschema version, update the generator tool to work with latest version and update all the remanining tools which are dependent on spec schema files.
+
+### Discrepancy
+<span class="evidence">The current latest version of JSON schema is version [2012-12](https://json-schema.org/specification.html), but unfortunately there isn't much [support](https://json-schema.org/implementations.html#web-ui-generation) to update the dependent tools(to be specific, the [generator](https://freifunk.net/api-generator/)). So my mentor [Andibraeu](https://github.com/andibraeu) and I have chosen to work with draft7 version, as it has upper hand with implementation support compared to other recent versions.</span>
+
+
+## Our initial layout
+- [Migrate spec schema files](#specfiles)
+- [Picking generator](#pick-generator)
+- [Generate and test forms](#generator)
+- [Update all the dependent tools](#dependent-tools)
+- [Test updated tools](#dependent-tools)
+- [Fix bugs, if any](#)
+
+## Phase I summary
+In the first phase of the period I mostly worked on the generator, We have decided to migrate a latest vesion of spec file to start working with the tools, so I have migrated the 0.4.16.json file to draft 7, and stated working on the generator.
+In the beginning no framework or implementation seemed perfect so, I have picked some of the frameworks to try and test, and in the end
+we weighed pros and cons to finally choose one.
+
+### Frameworks Evaluation
+<span class="pick-generator">I have choosen the following frameworks to build and test the form</span>
+1. UI Schema for React
+2. React JSON schema forms(mozilla)
+3. Restspace schema forms
+4. JSON Forms(jsonforms.io, Eclipse source) 
+
+I choose to work with React beacuse all these frameworks are proficient with the react and vue.\
+All the code for the building and testing of the frameworks can be found [here](https://github.com/sh15h4nk/json-webui-generator)
+At last, we have choose jsonforms by considering all the pros and cons.
+A detailed document of pros and cons can be found [here](https://docs.google.com/document/d/1dhPFyQ65YD8_dSjbzyoyvSfXyZUhtRU4DL17XdTOIi4/edit?usp=sharing).
+
+---
+
+There after I started to implement the features of the Generator tool like, showing the form data(bound data), Validation of the form data, loading data to the form.
+
+#### Bound data
+As I mentioned I was using React to build the forms with the frameworks, so in react a niche method to handle data is via `hooks`. So this was a easy task, I rendered the grid containing form data, beside to the form. And the grid is updated on update of the state.
+<img class="image" src="/assets/images/bound-data.png"/> 
+
+#### Validation and Submission
+Here, the JSONForms only emmit errors via an event, so on the event emmision I had to update the state, event I had to do the same thing to update the form data, it emmits OnChange event when the form data is updated along with the errors. So I have added a function to record errors and show the validation errors.
+
+{% gist sh15h4nk/1fa7c8bfed2c2a9fe2f3cbe941a11dc2 %}
+
+And for the submission of form I had to consider that there are no recorded errors and the form data should not be empty because I have recorded errors into state only if the forms data is not empty.
+
+
+Errors are emitted by the event even before starting to fill the form. By validating all this checks, I have generated the output JSON file.
+
+<img class="image" src="/assets/images/validate-data.png"/> 
+
+
+#### Loading Data
+This was also easy to achieve, I just had to write a function which fetches the API file of the comminity and set the state. But most of the online webservers doesn't allow cors. So I cannot fetch the files through the browser, as it blocks cors, so I had to use a proxy server to fetch the data for me and load that data into the form. This is also the same method used in the pervious version of the generator. So I used the old php proxy server.
+
+{% gist sh15h4nk/cc57e1912426707b90c857933ff340b0 %}
+
+But before that I had to fetch all the communities and their url links, and list all the communities in a select filed. So I have used directory.json to fetch all the communities.
+
+{% gist sh15h4nk/e8538f96189d9e4d39b4781db0aa47ff %}
+
+Then I have used React Select to render a select field.
+<img class="image" src="/assets/images/load-data.png"/> 
+
