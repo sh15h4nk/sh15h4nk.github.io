@@ -6,6 +6,6 @@ layout: page
 
 
 
-### { SHIVA SHANKAR }
+### SHIVA SHANKAR G
 {% include social-links.html %}
 

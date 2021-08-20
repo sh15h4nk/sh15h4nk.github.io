@@ -13,7 +13,13 @@ layout: compress
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name=author content="{{ site.name }}">
 
-    {% seo %}
+    {% if page.title == "Home" %}
+    <title> {{ site.name }} : h3y th3r3!</title>
+    {% else if page.title != "" %}
+    <title> {{ site.name }} => {{ page.title }} </title>
+    {% else %}
+    <title> {{ site.name }}</title>
+    {% endif %}
 
     {% include favicon.html %}
 
