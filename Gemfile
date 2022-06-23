@@ -9,4 +9,6 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem "jekyll-paginate-v2", "~> 2.0"
     gem "html-proofer"
+    gem "nokogiri", ">= 1.6.7.rc"
+    gem "webrick"
 end
