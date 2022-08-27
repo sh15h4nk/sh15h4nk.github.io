@@ -14,9 +14,12 @@ category: blog
 author: sh15h4nk
 description: Solhana challs writeups for paradigm ctf.
 ---
-My writeups for the solana challenges at paradign CTF 2022.
+My writeups for the solana challenges at paradign CTF 2022
+<!--more-->
 
-<!-- more -->
+
+
+
 
 # Intro
 I solved all the solana challanges authored by [hana](https://twitter.com/dumbcontract2). Challenges are really cool, I learned a lot of new things while solving.
