@@ -116,6 +116,7 @@ async function attack() {
     console.log("Signature: "+ sign);
 }
 ```
+[Source](https://github.com/sh15h4nk/ParadigmCTF-Solhana)\
 This should steal the tokens from the deposit account of the state.
 
 ```bash
@@ -322,6 +323,7 @@ async function attack() {
     console.log("Signature: "+ sign);
 }
 ```
+[Source](https://github.com/sh15h4nk/ParadigmCTF-Solhana)\
 After running the exploit the balances are:
 ```bash
 Pool balances:
@@ -622,6 +624,7 @@ async function attack() {
     console.log(`Player amount: ${playerTokenAccount.amount}`);
 }
 ```
+[Source](https://github.com/sh15h4nk/ParadigmCTF-Solhana)
 
 ```bash
 Pool amount: 100
