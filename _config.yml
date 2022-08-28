@@ -57,6 +57,7 @@ collections:
     output: true
 # ------------------------------------------------------------------------------
 
+permalink: /:title/
 
 # Build settings
 excerpt_separator: "<!--more-->"
