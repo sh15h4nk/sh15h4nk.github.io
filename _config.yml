@@ -40,7 +40,7 @@ theme_switch: on         # Show color switch (on | off)
 blog: on                 # Show blog tag and post list (on | off)
 avatar: on               # Show avatar (on | off)
 avatar_image: "assets/img/avatar.jpg"
-avatar_description: "My name is Shiva and I like to explore and exploit things."
+avatar_description: "I'm sh1v, I like to explore/it things."
 highlighter_theme: gruvbox  # Theme of the syntax_highlighter [base16 |
                             # colorful | github | gruvbox | molokai |
                             # monokai | pastie | thankful_eyes | tulip ]
