@@ -17,6 +17,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="{{ site.baseurl | append: '/' }}">Home</a></li>
               {% if site.blog == true %}
+                <li><a href="{{ '/audits' | prepend: site.baseurl }}">Audits</a></li>
                 <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
               {% endif %}
 
