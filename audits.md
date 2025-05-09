@@ -8,6 +8,7 @@ description: audits
 
 | Project | Language | Protocol | Report |
 | ------- | -------- | -------- | ------ |
+| Supra   | Move, Rust | Supra L1 chain | Soon |
 | IOTA    | Move, Sui | IOTA L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/2025.03.18%20-%20Final%20-%20IOTA%20Collaborative%20Audit%20Report.pdf){:target="_blank"} |
 | Honey | Rust, Solana | Lending | [link](https://github.com/sh15h4nk/audits/blob/main/reports/Honey%20Audit%20Report.pdf){:target="_blank"} |
 | LayerZero | Solidity, EVM | Bridge | [link](https://github.com/sh15h4nk/audits/blob/main/reports/LayerZero%20Protocol%20Audit%20Report.pdf){:target="_blank"} |
@@ -30,5 +31,4 @@ description: audits
 | Noya | Solidity, EVM | 1M | - |
 | Dopex | Solidity, EVM | 1H | - |
 
-## 
 
