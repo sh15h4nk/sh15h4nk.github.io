@@ -8,6 +8,7 @@ description: audits
 
 | Project | Language | Protocol | Report |
 | ------- | -------- | -------- | ------ |
+| Aptos-core Bounty | Move   | Aptos Network  | Soon   |
 | Supra   | Move, Aptos, Rust | Supra L1 chain | Soon |
 | IOTA    | Move, Sui, Rust | IOTA L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/2025.03.18%20-%20Final%20-%20IOTA%20Collaborative%20Audit%20Report.pdf){:target="_blank"} |
 | Honey | Rust, Solana | Lending | [link](https://github.com/sh15h4nk/audits/blob/main/reports/Honey%20Audit%20Report.pdf){:target="_blank"} |
