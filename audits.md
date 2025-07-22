@@ -4,7 +4,6 @@ title: Audits
 description: audits
 ---
 
-## Audit Reports
 
 | Project | Language | Protocol | Report |
 | ------- | -------- | -------- | ------ |
