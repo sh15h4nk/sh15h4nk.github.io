@@ -8,8 +8,9 @@ description: audits
 
 | Project | Language | Protocol | Report |
 | ------- | -------- | -------- | ------ |
+| Irys    | Rust     | Irys L1 Programable Datachain | Soon |
 | Aptos-core Bounty | Move   | Aptos Network  | Soon   |
-| Supra   | Move, Aptos, Rust | Supra L1 chain | Soon |
+| Supra   | Move, Aptos, Rust | Supra L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/L1_Audit_Report__Supra_Framework.pdf){:target="_blank"} |
 | IOTA    | Move, Sui, Rust | IOTA L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/2025.03.18%20-%20Final%20-%20IOTA%20Collaborative%20Audit%20Report.pdf){:target="_blank"} |
 | Honey | Rust, Solana | Lending | [link](https://github.com/sh15h4nk/audits/blob/main/reports/Honey%20Audit%20Report.pdf){:target="_blank"} |
 | LayerZero | Solidity, EVM | Bridge | [link](https://github.com/sh15h4nk/audits/blob/main/reports/LayerZero%20Protocol%20Audit%20Report.pdf){:target="_blank"} |
