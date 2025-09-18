@@ -8,6 +8,7 @@ description: audits
 
 | Project | Language | Protocol | Report |
 | ------- | -------- | -------- | ------ |
+| Canopy | Move, Movement | ALM | Soon |
 | Irys    | Rust     | Irys L1 Programable Datachain | Soon |
 | Aptos-core Bounty | Move   | Aptos Network  | Soon   |
 | Supra   | Move, Aptos, Rust | Supra L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/L1_Audit_Report__Supra_Framework.pdf){:target="_blank"} |
