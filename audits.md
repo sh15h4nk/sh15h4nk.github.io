@@ -8,8 +8,8 @@ description: audits
 
 | Project | Language | Protocol | Report |
 | ------- | -------- | -------- | ------ |
-| Canopy | Move, Movement | ALM | Soon |
-| Irys    | Rust     | Irys L1 Programable Datachain | Soon |
+| Canopy | Move, Movement | ALM | [link](https://github.com/sh15h4nk/audits/blob/main/reports/2025.09.30%20-%20Final%20-%20Canopy%20Collaborative%20Audit%20Report.pdf) |
+| Irys    | Rust     | Irys L1 Programable Datachain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/2025.09.08%20-%20Final%20-%20Irys%20Collaborative%20Audit%20Report%201757330803.pdf) |
 | Aptos-core Bounty | Move   | Aptos Network  | Soon   |
 | Supra   | Move, Aptos, Rust | Supra L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/L1_Audit_Report__Supra_Framework.pdf){:target="_blank"} |
 | IOTA    | Move, Sui, Rust | IOTA L1 chain | [link](https://github.com/sh15h4nk/audits/blob/main/reports/2025.03.18%20-%20Final%20-%20IOTA%20Collaborative%20Audit%20Report.pdf){:target="_blank"} |
