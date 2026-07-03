@@ -1,1 +1,1 @@
-# My jekyll Blog @[sh15h4nk.github.io](https://sh15h4nk.github.io/)
+[my blog](https://blog.sh1v.xyz)
