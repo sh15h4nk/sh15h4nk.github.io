@@ -30,7 +30,9 @@ description: audits
 
 | Project | Language | Findings | Rank |
 | ------- | -------- | -------- | ---- |
-| Orderly Vault | Rust, Solana | 1H | 5th place |
+| Polygon Heimdall V2 | Go  |   2L  | - |
+| K2      | Rust, Soroban | 3H  |  -   | 
+| Orderly Vault | Rust, Solana | 1H | 5th  |
 | Stake up | Solidity, EVM | 1H 2M | - |
 | Noya | Solidity, EVM | 1M | - |
 | Dopex | Solidity, EVM | 1H | - |
